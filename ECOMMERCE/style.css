@@ -1,0 +1,117 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+padding: 0;
+margin: 0;
+}
+
+nav {
+  background-color: black;
+  color: #f3eeee;
+  padding: 20px 50px;
+}
+
+.navTop {
+display: flex;  
+align-items: center;
+justify-content: space-between;
+}
+
+.seach {
+ display: flex; 
+ align-self: center;
+ background-color: gray;
+ padding: 10px 20px;
+ border: radius 15px;
+}
+
+.searchInput {
+ border: none;
+ background-color: transparent;
+}
+
+.searchInput::placeholder {
+  color: lightgray;
+}
+
+.limitedoffer {
+ font-size: 25px; 
+ border-bottom: 2px solid rgb(14, 1, 1);
+ cursor: pointer;
+ 
+}
+
+.navBottom {
+display: flex;  
+align-items: center;
+justify-content: center;
+}
+
+.menuItem {
+margin-right: 50px;   
+cursor: pointer;
+color: lightgrey;
+font-weight: 400;
+}
+
+.slider {
+background: url("https://www.painesinc.com/wp-content/uploads/2018/02/grey-background2.jpg");
+}
+
+.sliderWrapper {
+display: flex;
+width: 500px;
+}
+
+.sliderItem {
+  background: url(https://www.painesinc.com/wp-content/uploads/2018/02/grey-background2.jpg);
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.sliderPrice {
+  color: rgb(22, 105, 173);
+}
+
+.sliderWrapper {
+  width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+@media screen and (max-width:480px) {
+   nav {
+    padding: 20px;
+  }
+
+  .search{
+    display: none;
+  }
+
+ .navBottom{
+    flex-wrap: wrap;
+}
+  .menuItem{
+    margin: 20px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .sldier{
+   clip-path: none;
+  }
+
+  .sldierImg{
+    width: 90%;
+  }
+
+  .sliderBg{
+    width: 100%;
+    height: 100%;
+  }
+}
